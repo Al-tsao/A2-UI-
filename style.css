@@ -1,0 +1,98 @@
+html, body {
+  width: 100vw;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  background: #333;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.main {
+  width: 300px;
+  height: 500px;
+  background: linear-gradient(161.98deg, #07E3A1 13.65%, rgba(11, 111, 218, 0) 87.85%);
+  margin: 100px auto;
+}
+
+/* Bonus for you: center a background image! */
+.bernard-img {
+  width: 128px;
+  height: 156px;
+  background-image: url(https://assets-lighthouse.alphacamp.co/uploads/image/file/14990/Bernard_keyer.png);
+  background-size: cover;
+  background-position: center center;
+}
+
+/* begin your styles here!*/
+.main {
+  position: relative;
+  border-radius: 25px;
+  font-family: "Roboto", sans-serif;
+}
+.bernard-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-64px, -155px);
+  border-radius: 80px;
+  z-index: 1;
+}
+.content {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 200px;
+  background-color: white;
+  border-radius: 25px;
+}
+.name,
+.position{
+  padding: 0 10px;
+  margin: 0 auto;
+  text-align: center;
+}
+.name {
+  margin: 80px 0 0 0;
+  font-size: 2rem;
+}
+.position {
+  width: 150px;
+  background-color: black;
+  color: white;
+  font-size: 0.8rem;
+  padding: 2.5px 10px;
+  border-radius: 25px;
+  margin: 10px auto 20px auto;
+}
+.introduction {
+  padding: 0 30px;
+  font-size: 0.9rem;
+  line-height: 17px;
+  text-align: justify;
+}
+.mark {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  z-index: 2;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+
+}
+.mark::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+}
